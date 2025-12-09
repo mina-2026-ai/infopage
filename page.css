@@ -1,0 +1,821 @@
+/* @font-face */
+@font-face {
+    font-family: 'Paperlogy';
+    src: url('./font/Paperlogy-5Medium.ttf') format('truetype');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Paperlogy';
+    src: url('./font/Paperlogy-8ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('./font/Pretendard-Thin.otf') format('opentype');
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('./font/Pretendard-ExtraLight.otf') format('opentype');
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('./font/Pretendard-Light.otf') format('opentype');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('./font/Pretendard-Regular.otf') format('opentype');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('./font/Pretendard-Medium.otf') format('opentype');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('./font/Pretendard-SemiBold.otf') format('opentype');
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('./font/Pretendard-Bold.otf') format('opentype');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('./font/Pretendard-ExtraBold.otf') format('opentype');
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: '인천교육자람';
+    src: url('./font/인천교육자람.ttf') format('truetype');
+}
+
+/* color */
+:root {
+    --main-blue : #0069FF;
+}
+
+/* Common Reset */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: "Pretendard", sans-serif;
+    color: #333;
+    overflow-x: hidden;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+img, video {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Prevent text selection and dragging site-wide */
+html, body, .wrap {
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10+ */
+    user-select: none; /* Standard */
+}
+
+img, video, a {
+    -webkit-user-drag: none;
+    user-drag: none;
+}
+
+button, input, textarea, select {
+    font: inherit;
+    color: inherit;
+    background: none;
+    border: none;
+    outline: none;
+    padding: 0;
+    margin: 0;
+    box-shadow: none;
+    appearance: none;
+}
+
+strong, b {
+    font-weight: bold;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/* ul, li reset */
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    margin: 0;
+    padding: 0;
+}
+
+/* h1, h2, h3, h4 reset */
+h1, h2, h3, h4, h5 {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    font-size: inherit;
+}
+
+h5 {
+    font-weight: bold;
+}
+
+/* p, a reset */
+p {
+    margin: 0;
+    padding: 0;
+}
+a {
+    margin: 0;
+    padding: 0;
+    color: inherit;
+    text-decoration: none;
+}
+
+.wrap {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+
+/* section */
+section {
+    width: 100%;
+    margin-top: 10%;
+}
+
+h1 {
+    font-family: 'Paperlogy', sans-serif;
+    font-size: 4.5rem;
+    line-height: 1.1;
+    padding: 2.5% 0;
+}
+
+h3 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--main-blue);
+}
+h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 5%;
+}
+
+/* first-section */
+.first-section {
+    position: relative;
+    padding-bottom: 25%;
+}
+.first-section img {
+    margin: 0 auto;
+}
+.first-section .human {
+    position: absolute;
+    top: -10%;
+    right: 5%;
+    width: 250px;
+    z-index: -1;
+}
+.first-section .deco-1 {
+    position: absolute;
+    scale: 1.2;
+    bottom: 5%;
+    right: -3%;
+}
+.first-section .deco-2 {
+    position: absolute;
+    top: 22%;
+    right: -10%;
+}
+.first-section .deco-3 {
+    position: absolute;
+    top: -25%;
+    right: 15%;
+    z-index: -2;
+}
+.first-section .deco-4 {
+    position: absolute;
+    top: 20%;
+    left: -10%;
+}
+.first-section .deco-5 {
+    position: absolute;
+    top: -25%;
+    left: 15%;
+}
+.first-section .deco-6 {
+    position: absolute;
+    top: 18.5%;
+    right: 18%;
+}
+
+.first-section .rocket-box {
+    position: relative;
+    margin-top: 5%;
+}
+
+.first-section .rocket-box>img {
+    position:absolute;
+    left: 0;
+    top: 0;
+
+}
+.first-section .rocket-box p {
+    font-size: 2em;
+    line-height: 1.2;
+    margin: 0;
+    text-align: left;
+    width: 60%;
+    margin-left: auto;
+    padding-top: 10%;
+}
+
+.first-section .rocket-box .under-line {
+    position: absolute;
+    bottom: -35%;
+    right: 0;
+    width: 70%;
+    height: auto;
+}
+
+/* section-second */
+
+.wreath-table {
+    width: 100%;
+}
+
+.wreath-table tr {
+    display: table;
+    width: 100%;
+    margin-bottom: 3rem;
+}
+
+.wreath-table td {
+    width: 33.333%;
+    text-align: center;
+}
+.wreath-table td p{
+    font-size: 1.8rem;
+    line-height: 1.1;
+    margin-top: 1rem;
+}
+
+.wreath-table td span{
+    font-size: 1.5rem;
+    color: #888;
+}
+.wreath-table img {
+    display: block;
+    margin: 0 auto;
+    width: 70%;
+}
+
+
+/* section 3 */
+.section-3 .grandawards{
+    margin: 0 auto;
+    display: block;
+    padding-bottom: 5%;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+.section-3 .university-company-table {
+    width: 100%;
+}
+
+.section-3 .university-company-table tr {
+    display: table;
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+
+.section-3 .company-logo-table {
+    width: 100%;
+}
+
+.section-3 .company-logo-table tr {
+    display: table;
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+
+.section-3 .company-logo-table td {
+    width: 100%;
+    text-align: center;
+}
+.section-3 .company-logo-table td>img {
+    width: 100%;
+}
+
+.section-3 .university-company-table tr>td{
+    width: 100%;
+}
+.section-3 .university-company-table tr>td>img {
+    width: 100%;
+}
+
+.section-3 .company-2 {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.section-3 .company-2 p {
+    font-size: 1.5rem;
+    color: #777;
+    margin-top: 1rem;
+}
+
+.section-3 .img-container {
+    margin-top: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    z-index: 20;
+    background-color: #fff;
+}
+
+.section-3 .img-container>.headline {
+    font-family: "Paperlogy", sans-serif;
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.section-3 .img-container>img {
+    position: absolute;
+    top: 5%;
+}
+.section-3 .img-container>.endline {
+    font-size: 3.5rem;
+    padding-top: 25%;
+}
+
+.section-3 .img-container .cloud-1 {
+    position: absolute;
+    top: 0%;
+    left: 10%;
+    scale: 1.2;
+    z-index: -1;
+}
+.section-3 .img-container .cloud-2 {
+    position: absolute;
+    top: 30%;
+    right: 5%;
+    z-index: -1;
+}
+.section-3 .img-container .cloud-3 {
+    position: absolute;
+    top: 40%;
+    left: -5%;
+}
+.section-3 .img-container .cloud-4 {
+    position: absolute;
+    top:10%;
+    right: 15%;
+    z-index: -2;
+    opacity: 0.8;
+}
+
+/* section-4 */
+
+.section-4 > div > img {
+    display: block;
+    margin: 0 auto;
+    min-width: 60%;
+    max-width: 100%;
+    height: auto;
+}
+
+.section-4 .deco-box {
+    width: 16px;
+    height: 48px;
+    display: block;
+}
+.section-4 .deco-box.yellow {
+    background-color: #FFEA76;
+}
+.section-4 .deco-box.pink {
+    background-color: #FFD1E2;
+}
+.section-4 .deco-box.blue {
+    background-color: #D0F5F8;
+}
+
+.section-4 .title-container{
+    display: flex;
+    gap: 10px;
+}
+.section-4 .title-container>h4 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.section-4 table {
+    width: 100%;
+    margin-top: 2rem;
+    border-collapse: collapse;
+    border: 2px solid #333;
+}
+
+.section-4 table th,
+.section-4 table td {
+    font-size: 1.6rem;
+    padding: 1rem 1.5rem;
+    border: 1px solid #333;
+}
+.section-4 table th {
+    font-size: 2rem;
+}
+.section-4 table tr.yellow {
+    background-color: #FFF2AC;
+}
+.section-4 table tr.pink {
+    background-color: #FFD1E2;
+}
+.section-4 table tr.blue {
+    background-color: #EAFDFF;
+}
+.section-4-table .text-left {
+    text-align: left;
+}
+.section-4-table .text-left ul{
+    margin-bottom: 1.5rem;
+}
+.section-4-table .text-left ul:last-child{
+    margin-bottom: 0;
+}
+.section-4 .contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.section-4 .contact-container>img{
+    position: absolute;
+    width: 15%;
+    bottom: -20%;
+    left: 3%;
+}
+.section-4 .contact-container .contact-button {
+    margin-top: 5%;
+    width: 65%;
+    height: 85px;
+    background-color: var(--main-blue);
+    color: #fff;
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 60px;
+    border-radius: 50px;
+    cursor: pointer;
+    line-height: 5.5rem;
+}
+
+.section-4 .language-class {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 5%;
+}
+.section-4 .language-class>img:first-child {
+    width: 200px;
+}
+.section-4 .language-class>img {
+    width: 160px;
+}
+.section-4 .language-class-text {
+    font-size: 3rem;
+}
+
+.section-4 .more-info {
+    display: inline-block;
+    margin-top: 0.5rem;
+    font-size: 1.6rem;
+    color: #999;
+    cursor: pointer;
+    width: 100%;
+    text-align: right;
+    padding-right: 5px;
+}
+
+/* section-5 */
+.section-5{
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    background-color: #F4F8FF;
+    padding: 5% 0;
+    position: relative;
+}
+.section-5>span {
+    font-size: 1.5rem;
+    color: #888;
+
+}
+.section-5 .step-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+    margin-top: 8%;
+}
+.section-5 .step-container .step-box {
+    flex: 1;
+    display: flex;
+    font-size: 1.3rem;
+    align-items: center;
+    justify-content: center;
+}
+.section-5 .step-container .step-box>img {
+    width: 25%;
+    margin-right: 5%;
+}
+.section-5 .main-container {
+    height: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    z-index: 10;
+}
+.section-5 .main-container>div {
+    width: 100%;
+}
+.section-5 .main-container>div>p{
+    font-size: 1.5rem;
+    color: #999;
+}
+.section-5 div:last-of-type {
+    position: relative;
+}
+
+.section-5 .img-500 {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.section-5 .piggy-bank {
+    position: absolute;
+    width: 50%;
+    right: -7.5%;
+    top: 45%;
+    transform: translateY(-50%);
+    z-index: 1;
+    transition: all 0.8s ease;
+}
+.section-5 .piggy-bank-game {
+    position: absolute;
+    width: 55%;
+    right: 45%;
+    top: 65%;
+    transform: translate(50%, -50%);
+    z-index: 1;
+    transition: all 0.8s ease;
+}
+
+.section-5 .insert-coin {
+    position: absolute;
+    width: 7%;
+    right: 45%;
+    top: 25%;
+    cursor: grab;
+    z-index: 15;
+    pointer-events: auto;
+}
+
+.section-5 .piggy-zone {
+    position: absolute;
+    width: 30%;
+    height: 25%;
+    right: 50%;
+    top: 52.5%;
+    transform: translate(50%, 0%);
+    z-index: 1;
+    pointer-events: none;
+}
+
+.section-5 .confetti {
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    top: 3%;
+    padding-left: 15%;
+    z-index: 2;
+
+}
+
+.section-5 .icon-arrow {
+    width: 40px;
+}
+
+#myLottie {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+#myLottie.show {
+    opacity: 1;
+}
+
+/* 코인 둥실둥실 떠있는 애니메이션 */
+@keyframes float {
+    0%, 100% {
+        transform: translate(0, 0);
+    }
+    50% {
+        transform: translate(0, -20px);
+    }
+}
+
+.insert-coin.floating {
+    animation: float 2s ease-in-out infinite;
+}
+
+/* section-6 */
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.section-6 .card-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 3%;
+    margin-top: 5%;
+    width: 100%;
+}
+
+.section-6 .card-container .card {
+    flex: 1;
+    height: 460px;
+    width: 32%;
+    padding: 3rem 2rem;
+    background-color: #ffffff;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.section-6 .card-container .card>div:first-child {
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section-6 .card-container .card>div:first-child>img {
+    width: 100%;
+}
+
+
+.section-6 .card .scanme{
+    position: absolute;
+    top: 10%;
+    z-index: 1;
+    max-width: 150px;
+    left: 15%;
+}
+
+.section-6 .card h4 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.section-6 .card p {
+    font-size: 1.6rem;
+    color: #666;
+    line-height: 1.2;
+}
+
+.section-6 .card:nth-child(3) img:first-of-type {
+    width: 120px;
+    margin-bottom: 1rem;
+}
+
+
+/* final-section */
+.final-section {
+    background-image: url("imgs/back-img-note.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    padding-bottom: 10%;
+    margin-top: 0%;
+    z-index: 0;
+}
+.final-section .info-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    color:#999;
+    font-size: 1.7rem;
+    padding-top: 10%;
+}
+.final-section .info-box .deco-line {
+    width: 1px;
+    height: 2rem;
+    background-color: #999;
+}
+
+.final-section .last-message {
+    font-family: "인천교육자람", sans-serif;
+    font-size: 4rem;
+    color: #333;
+    position: relative;
+    padding-top: 8.5%;
+}
+.final-section .last-message>p {
+    z-index: 2;
+    padding-bottom: 8%;
+}
+.final-section .last-message .deco-good {
+    position: absolute;
+    width: 20%;
+    top: 3%;
+    left: 5%;
+}
+.final-section .last-message .deco-circle {
+    position: absolute;
+    width: 18%;
+    top: 15%;
+    right: 14.5%;
+}
+.final-section .deco-pencil {
+    position: absolute;
+    width: 30%;
+    bottom: 0%;
+    right: 0%;
+}
+
+.final-section .go-to-button{
+    width: 80%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: #666 2px solid;
+    font-size: 2.5rem;
+    border-radius: 1rem;
+    margin: 0 auto;
+    margin-top: 1rem;
+    pointer-events: auto;
+}
+
+.final-section .go-to-button:hover {
+    background-color: var(--main-blue);
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}

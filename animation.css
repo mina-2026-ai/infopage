@@ -1,0 +1,87 @@
+
+/* Entry animations: slide up + fade in */
+.animate-up {
+    transform: translateY(30px);
+    opacity: 0;
+    transition: transform 1.2s cubic-bezier(.2,.8,.2,1), opacity 1.2s ease;
+    will-change: transform, opacity;
+}
+.animate-up.is-visible {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* -----------------section-1----------------- */
+/* convenience delays for common targets */
+.first-section h1.animate-up { transition-delay: 0.05s; }
+.first-section img.animate-up { transition-delay: 0.2s; }
+
+/* rocket-box animation delays */
+.rocket-box img.animate-up { transition-delay: 0.35s; }
+.rocket-box .under-line.animate-up { transition-delay: 0.6s; }
+.rocket-box p.animate-up { transition-delay: 0.8s; }
+
+/* -----------------section-2----------------- */
+/* wreath-table row animation delays */
+.wreath-table tr.animate-up:nth-child(1) { transition-delay: 0.2s; }
+.wreath-table tr.animate-up:nth-child(2) { transition-delay: 0.4s; }
+.wreath-table tr.animate-up:nth-child(3) { transition-delay: 0.6s; }
+
+/* -----------------section-3----------------- */
+/* tracking-in-animation */
+@-webkit-keyframes tracking-in-expand {
+    0% {
+        letter-spacing: -0.5em;
+        opacity: 0;
+    }
+    40% {
+        opacity: 0.6;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes tracking-in-expand {
+    0% {
+        letter-spacing: -0.5em;
+        opacity: 0;
+    }
+    40% {
+        opacity: 0.6;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.tracking-in-expand {
+    -webkit-animation: tracking-in-expand 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+    animation: tracking-in-expand 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+/* -----------------section-4 language-class----------------- */
+/* 오른쪽에서 왼쪽으로 슬라이드 인 */
+@keyframes slide-in-right {
+    0% {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.language-class img {
+    opacity: 0;
+    transform: translateX(100px);
+}
+
+.language-class img.slide-in {
+    animation: slide-in-right 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+
+.language-class img:nth-child(1).slide-in { animation-delay: 0s; }
+.language-class img:nth-child(2).slide-in { animation-delay: 0.2s; }
+.language-class img:nth-child(3).slide-in { animation-delay: 0.4s; }
+.language-class img:nth-child(4).slide-in { animation-delay: 0.6s; }
