@@ -845,6 +845,28 @@ h2 {
     .first-section .human {
         display: none;
     }
+    .first-section .deco-1 {
+        width: 30%;
+    }
+    .first-section .deco-2 {
+        width: 40%;
+    }
+    .first-section .deco-3 {
+        display: none;
+    }
+    .first-section .deco-4 {
+        width: 50%;
+        top: 30%;
+        z-index: -1;
+    }
+    .first-section .deco-5 {
+        z-index: -1;
+        left: 25%;
+    }
+    .first-section .deco-6 {
+        top: 45%;
+        right: -15%;
+    }
     .first-section .rocket-box {
         margin-top: 10%;
     }
@@ -989,6 +1011,8 @@ h2 {
     }
     .section-5 .icon-arrow{
         transform: rotate(90deg);
+        opacity: 0.3;
+        width: 30px;
     }
     
     .section-5 .step-container {
@@ -1073,6 +1097,9 @@ h2 {
         display: none;
     }
     .final-section .last-message .deco-circle {
+        display: none;
+    }
+    .final-section .deco-pencil {
         display: none;
     }
 }
