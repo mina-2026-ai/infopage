@@ -1,0 +1,106 @@
+/* ========================================
+   Mobile Responsive (max-width: 768px)
+   ======================================== */
+@media screen and (max-width: 768px) {
+    /* Global */
+    h1 {
+        font-size: 2.5rem;
+        decoration: underline;
+    }
+    
+    h3 {
+        font-size: 1.2rem;
+    }
+    
+    h2 {
+        font-size: 1rem;
+    }
+    
+    /* first-section */
+    .first-section .rocket-box p {
+        font-size: 1.5rem;
+    }
+    
+    /* section-2 */
+    .wreath-table td p {
+        font-size: 1.2rem;
+    }
+    
+    .wreath-table td span {
+        font-size: 1rem;
+    }
+    
+    /* section-3 */
+    .section-3 .company-2 p {
+        font-size: 1rem;
+    }
+    
+    .section-3 .img-container>.headline {
+        font-size: 2.5rem;
+    }
+    
+    .section-3 .img-container>.endline {
+        font-size: 2.5rem;
+    }
+    
+    /* section-4 */
+    .section-4 .title-container>h4 {
+        font-size: 1.8rem;
+    }
+    
+    .section-4 table th,
+    .section-4 table td {
+        font-size: 1.1rem;
+    }
+    
+    .section-4 table th {
+        font-size: 1.4rem;
+    }
+    
+    .section-4 .contact-container .contact-button {
+        font-size: 2rem;
+    }
+    
+    .section-4 .language-class-text {
+        font-size: 2rem;
+    }
+    
+    .section-4 .more-info {
+        font-size: 1.1rem;
+    }
+    
+    /* section-5 */
+    .section-5>span {
+        font-size: 1rem;
+    }
+    
+    .section-5 .step-container .step-box {
+        font-size: 0.9rem;
+    }
+    
+    .section-5 .main-container>div>p {
+        font-size: 1rem;
+    }
+    
+    /* section-6 */
+    .section-6 .card h4 {
+        font-size: 1.4rem;
+    }
+    
+    .section-6 .card p {
+        font-size: 1.1rem;
+    }
+    
+    /* final-section */
+    .final-section .info-box {
+        font-size: 1.2rem;
+    }
+    
+    .final-section .last-message {
+        font-size: 2.5rem;
+    }
+    
+    .final-section .go-to-button {
+        font-size: 1.8rem;
+    }
+}
