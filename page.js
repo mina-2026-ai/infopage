@@ -303,17 +303,34 @@ document.addEventListener('DOMContentLoaded', function() {
             checkCollision();
         };
 
+        const onTouchMove = (e) => {
+            if (!isDragging) return;
+            e.preventDefault();
+            const touch = e.touches[0];
+            const deltaX = touch.clientX - startX;
+            const deltaY = touch.clientY - startY;
+            const nextX = startOffsetX + deltaX;
+            const nextY = startOffsetY + deltaY;
+            currentOffsetX = nextX;
+            currentOffsetY = nextY;
+            insertCoin.style.transform = `translate(${nextX}px, ${nextY}px)`;
+            checkCollision();
+        };
+
         const endDrag = () => {
             if (!isDragging) return;
             isDragging = false;
             insertCoin.style.cursor = 'grab';
             window.removeEventListener('mousemove', onMouseMove);
             window.removeEventListener('mouseup', endDrag);
+            window.removeEventListener('touchmove', onTouchMove);
+            window.removeEventListener('touchend', endDrag);
             checkCollision();
         };
 
+        // 마우스 이벤트
         insertCoin.addEventListener('mousedown', (e) => {
-            insertCoin.classList.remove('floating'); // 클릭하면 둥실둥실 애니메이션 제거
+            insertCoin.classList.remove('floating');
             isDragging = true;
             startX = e.clientX;
             startY = e.clientY;
@@ -322,6 +339,19 @@ document.addEventListener('DOMContentLoaded', function() {
             insertCoin.style.cursor = 'grabbing';
             window.addEventListener('mousemove', onMouseMove);
             window.addEventListener('mouseup', endDrag);
+        });
+
+        // 터치 이벤트
+        insertCoin.addEventListener('touchstart', (e) => {
+            insertCoin.classList.remove('floating');
+            isDragging = true;
+            const touch = e.touches[0];
+            startX = touch.clientX;
+            startY = touch.clientY;
+            startOffsetX = currentOffsetX;
+            startOffsetY = currentOffsetY;
+            window.addEventListener('touchmove', onTouchMove, { passive: false });
+            window.addEventListener('touchend', endDrag);
         });
     }
 
