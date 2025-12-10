@@ -184,6 +184,41 @@ h2 {
     margin-bottom: 5%;
 }
 
+/* pop-up */
+.pop-up {
+    width: 50%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 50;
+    animation: pop-shake 0.8s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+    cursor: pointer;
+}
+
+.pop-up.hide {
+    display: none;
+}
+
+.pop-up .clock {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.pop-up .clock-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Paperlogy", sans-serif;
+    font-size: 7rem;
+    line-height: 6.5rem;
+    padding-top: 1%;
+    color: tomato;
+    z-index: 1;
+}
+
 /* first-section */
 .first-section {
     position: relative;

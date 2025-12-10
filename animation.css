@@ -85,3 +85,52 @@
 .language-class img:nth-child(2).slide-in { animation-delay: 0.2s; }
 .language-class img:nth-child(3).slide-in { animation-delay: 0.4s; }
 .language-class img:nth-child(4).slide-in { animation-delay: 0.6s; }
+
+/* -----------------pop-up bounce & shake----------------- */
+/* 튀어나오고 흔들리는 애니메이션 */
+@keyframes pop-shake {
+    0% {
+        transform: translate(-50%, -50%) scale(0);
+        opacity: 0;
+    }
+    50% {
+        transform: translate(-50%, -50%) scale(1.2);
+        opacity: 1;
+    }
+    60% {
+        transform: translate(-50%, -50%) scale(0.9);
+    }
+    70% {
+        transform: translate(-50%, -50%) scale(1.1);
+    }
+    80% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+    85% {
+        transform: translate(-48%, -50%) scale(1);
+    }
+    90% {
+        transform: translate(-52%, -50%) scale(1);
+    }
+    95% {
+        transform: translate(-48%, -50%) scale(1);
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
+
+/* 계속 흔들리는 애니메이션 */
+@keyframes shake-infinite {
+    0%, 100% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    10%, 30%, 50%, 70%, 90% {
+        transform: translate(-50%, -50%) rotate(-5deg);
+    }
+    20%, 40%, 60%, 80% {
+        transform: translate(-50%, -50%) rotate(5deg);
+    }
+}
+
+

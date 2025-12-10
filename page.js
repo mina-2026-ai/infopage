@@ -1,5 +1,22 @@
 // cursor-pointer 클릭 시 다른 홈페이지 열기
 document.addEventListener('DOMContentLoaded', function() {
+    // ------------------------- pop-up hide after animation ------------------------------
+    const popUp = document.querySelector('.pop-up');
+    if (popUp) {
+        // 클릭이나 터치 시 숨김
+        popUp.addEventListener('click', () => {
+            popUp.classList.add('hide');
+        });
+        popUp.addEventListener('touchstart', () => {
+            popUp.classList.add('hide');
+        });
+        
+        // pop-shake 0.8s + shake-infinite 3s = 3.8s 후 자동 숨김
+        setTimeout(() => {
+            popUp.classList.add('hide');
+        }, 3800);
+    }
+
     // ------------------------- section-1 animations ------------------------------
     // Entry animations for first-section logo and title
     const firstSection = document.querySelector('.first-section');
