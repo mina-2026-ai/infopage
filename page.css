@@ -922,7 +922,15 @@ h2 {
         word-break: keep-all;
         font-size: 1.6rem;
     }
-    
+    /* .bottom-bar */
+    .bottom-bar {
+        font-size: 1.5rem;
+        padding: 2% 0;
+        flex-direction: column;
+        width: 90%;
+        margin: 0 auto;
+        height: 5%;
+    }
     /* first-section */
     .first-section .human {
         display: none;
