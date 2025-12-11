@@ -133,4 +133,23 @@
     }
 }
 
+/* apply-button p 태그 번갈아 나타나기 */
+@keyframes fade-in-out {
+    0% {
+        opacity: 0;
+    }
+    1% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 1;
+    }
+    51% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
 

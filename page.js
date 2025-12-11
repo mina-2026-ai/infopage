@@ -1,5 +1,13 @@
 // cursor-pointer 클릭 시 다른 홈페이지 열기
 document.addEventListener('DOMContentLoaded', function() {
+    // ------------------------- apply-button click event ------------------------------
+    const applyButton = document.querySelector('.apply-button');
+    if (applyButton) {
+        applyButton.addEventListener('click', () => {
+            window.open('https://specify.kr/p/?j=65', '_blank');
+        });
+    }
+
     // ------------------------- pop-up hide after animation ------------------------------
     const popUp = document.querySelector('.pop-up');
     if (popUp) {
@@ -14,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // pop-shake 0.8s + shake-infinite 3s = 3.8s 후 자동 숨김
         setTimeout(() => {
             popUp.classList.add('hide');
-        }, 3800);
+        }, 1000);
     }
 
     // ------------------------- section-1 animations ------------------------------
