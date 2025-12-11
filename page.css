@@ -569,10 +569,7 @@ h2 {
 }
 
 .section-4 .contact-container>img{
-    position: absolute;
-    width: clamp(125px, 15%, 200px);
-    bottom: -20%;
-    left: 3%;
+    width: 180px;
 }
 .section-4 .contact-container .contact-button {
     margin-top: 5%;
@@ -629,7 +626,7 @@ h2 {
 .chat-cook-1,
 .chat-cook-2 {
     position: absolute;
-    width: clamp(80px, 15rem, 400px);
+    width: 360px;
     z-index: 1;
     animation: float 2s ease-in-out infinite;
 }
@@ -1126,14 +1123,14 @@ h2 {
     }
     
     .section-4 .contact-container>img{
-        top: 20%;
+        top: 5%;
+        width: 120px;
     }
     
     .section-4 .contact-container .contact-button {
         width: 80%;
         padding: 0 5%;
         /* font-size: 1.5rem; */
-        margin-top: 20%;
     }
 
     .section-4 .language-class{
