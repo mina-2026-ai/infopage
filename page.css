@@ -629,7 +629,7 @@ h2 {
 .chat-cook-1,
 .chat-cook-2 {
     position: absolute;
-    width: clamp(80px, 20rem, 400px);
+    width: clamp(80px, 15rem, 400px);
     z-index: 1;
     animation: float 2s ease-in-out infinite;
 }
