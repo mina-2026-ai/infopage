@@ -489,7 +489,6 @@ h2 {
 }
 
 /* section-4 */
-
 .section-4 > div > img {
     display: block;
     margin: 0 auto;
@@ -522,6 +521,10 @@ h2 {
     font-weight: bold;
 }
 
+.section-4 .mobile-table {
+    display: none;
+}
+
 .section-4 table {
     width: 100%;
     margin-top: 2rem;
@@ -547,6 +550,7 @@ h2 {
 .section-4 table tr.blue {
     background-color: #EAFDFF;
 }
+
 .section-4-table .text-left {
     text-align: left;
 }
@@ -571,7 +575,8 @@ h2 {
 }
 .section-4 .contact-container .contact-button {
     margin-top: 5%;
-    width: 65%;
+    width: 100%;
+    max-width: 800px;
     height: 85px;
     background-color: var(--main-blue);
     color: #fff;
@@ -581,6 +586,10 @@ h2 {
     border-radius: 50px;
     cursor: pointer;
     line-height: 5.5rem;
+    padding: 0 2rem;
+    box-sizing: border-box;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 .section-4 .language-class {
@@ -1031,7 +1040,7 @@ h2 {
     .section-3 .img-container>img{
         top: 10%;
     }
-    /* section-4 */
+    /* section-4 */ 
     .section-4 .deco-box {
         width: 12px;
         height: 30px;
@@ -1045,27 +1054,13 @@ h2 {
         font-size: 1.5rem;
         word-break: keep-all;
     }
-    
-    .section-4 table {
+
+    .section-4 .section-4-table {
+        display: none;
+    }
+
+    .section-4 .mobile-table {
         display: block;
-        overflow-x: auto;
-        white-space: nowrap;
-        -webkit-overflow-scrolling: touch;
-    }
-    
-    .section-4 table th,
-    .section-4 table td {
-        font-size: 1rem;
-        padding: 0.5rem 0.8rem;
-    }
-    
-    .section-4 table th {
-        font-size: 1.2rem;
-    }
-    
-    .section-4-table .text-left {
-        white-space: normal;
-        word-break: keep-all;
     }
     
     .section-4 .contact-container>img{
