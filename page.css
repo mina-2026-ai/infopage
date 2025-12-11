@@ -191,7 +191,8 @@ h2 {
     z-index: 100;
     max-width: 1200px;
     width: 100%;
-    margin: 0 auto;
+    right: 50%;
+    transform: translateX(50%);
     background-color: #111;
     color: white;
     font-size: 2.5rem;
@@ -530,6 +531,10 @@ h2 {
     margin-top: 2rem;
     border-collapse: collapse;
     border: 2px solid #333;
+    word-break: break-all;
+}
+.section-4 table ul li {
+    word-break: keep-all;
 }
 
 .section-4 table th,
@@ -538,9 +543,7 @@ h2 {
     padding: 1rem 1.5rem;
     border: 1px solid #333;
 }
-.section-4 table th {
-    font-size: 2rem;
-}
+
 .section-4 table tr.yellow {
     background-color: #FFF2AC;
 }
@@ -938,8 +941,8 @@ h2 {
         padding: 2% 0;
         flex-direction: column;
         width: 90%;
-        margin: 0 auto;
         height: 66px;
+
     }
     /* .pop-up */
     .pop-up .clock-text{
@@ -1091,6 +1094,13 @@ h2 {
     }
     .section-4 .more-info {
         font-size: 1.1rem;
+    }
+    .section-4 table th {
+        font-size: 1.4rem;
+    }
+    .section-4 table th, .section-4 table td {
+        padding: 0.8rem 1rem;
+        font-size: 1.4rem;
     }
     
     /* section-5 */
