@@ -490,8 +490,7 @@ h2 {
 }
 
 /* section-4 */
-.section-4 > div > img {
-    display: block;
+.section-4 > div > .info-img {
     margin: 0 auto;
     min-width: 60%;
     max-width: 100%;
@@ -620,6 +619,54 @@ h2 {
     width: 100%;
     text-align: right;
     padding-right: 5px;
+}
+
+/* chat decorations */
+.chat-design-1,
+.chat-design-2,
+.chat-game-1,
+.chat-game-2,
+.chat-cook-1,
+.chat-cook-2 {
+    position: absolute;
+    width: clamp(80px, 20rem, 400px);
+    z-index: 1;
+    animation: float 2s ease-in-out infinite;
+}
+
+.chat-design-1 {
+    top: 20%;
+    left:3%;
+}
+
+.chat-design-2 {
+    top: 15%;
+    right: 1%;
+    animation-delay: 0.5s;
+}
+
+.chat-game-1 {
+    top:20%;
+    left:3%;
+    animation-delay: 1s;
+}
+
+.chat-game-2 {
+    top: 15%;
+    right: 1%;
+    animation-delay: 1.5s;
+}
+
+.chat-cook-1 {
+    top: 20%;
+    left:3%;
+    animation-delay: 2s;
+}
+
+.chat-cook-2 {
+    top: 15%;
+    right: 1%;
+    animation-delay: 2.5s;
 }
 
 /* section-5 */
@@ -1109,6 +1156,15 @@ h2 {
     .section-4 table th, .section-4 table td {
         padding: 0.8rem 1rem;
         font-size: 1.4rem;
+    }
+
+    .chat-design-1,
+    .chat-design-2,
+    .chat-game-1,
+    .chat-game-2,
+    .chat-cook-1,
+    .chat-cook-2 {
+        display: none;
     }
     
     /* section-5 */
