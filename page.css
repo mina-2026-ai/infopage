@@ -528,9 +528,8 @@ h2 {
 
 .section-4 table {
     width: 100%;
-    margin-top: 2rem;
+    margin-top: 1rem;
     border-collapse: collapse;
-    border: 2px solid #333;
     word-break: break-all;
 }
 .section-4 table ul li {
@@ -572,7 +571,7 @@ h2 {
 
 .section-4 .contact-container>img{
     position: absolute;
-    width: 15%;
+    width: clamp(125px, 15%, 200px);
     bottom: -20%;
     left: 3%;
 }
@@ -1044,6 +1043,9 @@ h2 {
         top: 10%;
     }
     /* section-4 */ 
+    .section-4{
+        width: 100%;
+    }
     .section-4 .deco-box {
         width: 12px;
         height: 30px;
@@ -1064,11 +1066,17 @@ h2 {
 
     .section-4 .mobile-table {
         display: block;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .section-4 .mobile-table ul {
+        width: 100%;
+        box-sizing: border-box;
     }
     
     .section-4 .contact-container>img{
-        width: 30%;
-        top: 0;
+        top: 20%;
     }
     
     .section-4 .contact-container .contact-button {
