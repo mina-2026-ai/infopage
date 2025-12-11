@@ -697,6 +697,10 @@ h2 {
     font-size: 1.3rem;
     align-items: center;
     justify-content: center;
+    background-color: #fff;
+    /* width: 80%; */
+    padding: 1.5rem;
+    border-radius: 150px;
 }
 .section-5 .step-container .step-box>img {
     width: 25%;
@@ -783,7 +787,6 @@ h2 {
 
 .section-5 .icon-arrow {
     width: 40px;
-
 }
 
 #myLottie {
