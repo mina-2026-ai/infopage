@@ -793,6 +793,7 @@ h2 {
 }
 .section-6 .card-container .card>div:first-child>img {
     width: 100%;
+    max-width: 200px;
 }
 
 
